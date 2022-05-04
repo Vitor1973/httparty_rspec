@@ -1,7 +1,10 @@
 require 'httparty'
-require 'httparty/request'
-require 'httparty/response/headers'
-require_relative '/spec/HTTPARTY/services/contatos_servive.rb'
+require 'httparty/request'   #request serve para o quê ?
+require 'httparty/response/headers'  #response e headers servem para o quê ?
+#{}require_relative 'tokenizer'
+require_relative '/Httparty/spec/spec/spec_helper.rb'
+#require_relative '/HTTPARTY/services/contatos_servive.rb'
+
 
 RSpec.configure do |config|
   include Contato

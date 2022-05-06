@@ -5,3 +5,6 @@ describe 'fazer uma requisição '  do
         Contato.get('/contacts/977')
     end
 end
+
+
+# comando usado no terminal  rspec .\spec\get_spec.rb

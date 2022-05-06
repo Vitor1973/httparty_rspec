@@ -35,3 +35,6 @@ describe 'fazer requisição' do
 
 
 end
+
+
+#comando usado no terminal rspec .\spec\put_spec.rb

@@ -12,7 +12,7 @@ describe '' do
         }.to_json
         @headers ={ "Accept": 'application/vnd.tasksmanager.v2',
                 'Content-Type': 'application/json'}
-        @request = HTTParty.post('https://api-de-tarefas.herokuapp.com', body: @body, hearders: @headers)
+        @request = HTTParty.post('https://api-de-tarefas.herokuapp.com/contacts/1301' , body: @body, hearders: @headers)
         puts @request
 
     end

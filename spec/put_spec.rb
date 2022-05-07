@@ -2,33 +2,32 @@ describe 'fazer requisição' do
 
     context 'para alterar dados' do
         it 'put' do
-            @body_put = {
-                "id": 977,
-                "name": "bruno 28",
-                "last-name": "batista 28",
-                "email": "bruno28@gmail.com",
-                "age": 28,
-                "phone": "21984759575",
-                "address": "Rua dois",
-                "state": "Minas Gerais",
-                "city": "Belo Horizonte"
+        @body_put = {
+            "id": 1301,
+                "name": "Sophiabisc",
+                "last-name": "BarreiraAAAA",
+                "email": "scotty$%@king.net",
+                "age": 30,
+                "phone": "(86) 9396-7612",
+                "address": "Avenida Theo",
+                "state": "São Paulo",
+                "city": "Catolândia"
             }.to_json
-                @requisicao_put = Contato.put('/contacts/977', body: @body_put)
-                puts @requisicao_put
+            @req_put = Contato.put('https://api-de-tarefas.herokuapp.com/contacts/1301', body: @body_put)
+            puts @req_put
 
         end
 
-        it 'path' do
-            @body_patch = {
-                "id": 1268,
-                "name": "bruno 29",
-                "last-name": "batista 29",
-                "email": "bruno29@gmail.com",
-
-            }.to_json
-                @requisicao_put = Contato.put('/contacts/1268', body: @body_patch)
-
-        end
+            it 'patch' do
+                @body_patch = {
+                    "id": 1314,
+                    "name": "Yago123",
+                    "last-name": "Meireles234",
+                    "email": "carita123@windler.biz"
+                }.to_json
+                    @requisicao_patch = Contato.patch('https://api-de-tarefas.herokuapp.com/contacts/1314', body: @body_patch)
+                    puts @requisicao_patch
+            end
 
     end
 
